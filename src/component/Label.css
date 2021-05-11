@@ -1,0 +1,28 @@
+.label {
+	padding: 0px 20px;
+	color: black;
+	width: 500px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: start;
+	background-color: rgb(242, 162, 101);
+}
+
+p {
+	padding: 0px;
+	margin: 0px;
+}
+
+.name-and-con {
+	width: 500px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.parents {
+	font-weight: 600;
+	text-decoration: underline;
+}
