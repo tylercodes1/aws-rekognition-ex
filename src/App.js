@@ -1,14 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { React, useEffect, useState } from "react";
 import Label from "./component/Label";
 
 function App() {
-	const [error, setError] = useState(false);
 	const [labels, setLabels] = useState([]);
 	useEffect(() => {
 		var AWS = require("aws-sdk");
-		var uuid = require("uuid");
 
 		const bucket = "aws-rekognition-example-tk";
 		const photo = "TylerViolin.jpg";
@@ -34,7 +31,7 @@ function App() {
 		//asdf
 		client.detectLabels(params, function (err, response) {
 			if (err) {
-				setError(true);
+				console.log(err);
 			} else {
 				setLabels(response.Labels);
 			}
