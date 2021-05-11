@@ -31,7 +31,7 @@ function App() {
 			},
 			MaxLabels: 10,
 		};
-
+		//asdf
 		client.detectLabels(params, function (err, response) {
 			if (err) {
 				setError(true);
